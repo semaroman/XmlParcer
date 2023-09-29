@@ -5,10 +5,10 @@ import com.google.gson.GsonBuilder;
 import com.google.gson.reflect.TypeToken;
 import org.w3c.dom.Node;
 import org.w3c.dom.NodeList;
+import org.w3c.dom.Document;
+import org.w3c.dom.Element;
 import org.xml.sax.SAXException;
 
-import javax.swing.text.Document;
-import javax.swing.text.Element;
 import javax.xml.parsers.DocumentBuilder;
 import javax.xml.parsers.DocumentBuilderFactory;
 import javax.xml.parsers.ParserConfigurationException;
@@ -24,7 +24,7 @@ public class Main {
         String fileNameJSON = "data2.json";
         List<Employee> list = parseXML(fileNameXML);
         String json = listToJson(list);
-        writeString(json);
+        writeString(json, fileNameJSON);
     }
 
     public static List<Employee> parseXML(String fileNameXML) {

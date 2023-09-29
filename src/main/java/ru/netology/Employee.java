@@ -7,9 +7,6 @@ public class Employee {
     public String country;
     public int age;
 
-    public Employee() {
-    }
-
     public Employee(long id, String firstName, String lastName, String country, int age) {
         this.id = id;
         this.firstName = firstName;
